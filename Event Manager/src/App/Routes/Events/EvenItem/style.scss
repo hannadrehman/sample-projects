@@ -1,0 +1,15 @@
+@import '../../../scss/colors';
+
+.event-item-wrapper{
+  position: relative;
+  min-width: 400px;
+
+  .event-item{
+    box-shadow: 1px 1px 1px 1px $color-thin-gray;
+    padding: 10px;
+    margin: 0 4px 4px 4px;
+    p{
+      margin: 5px;
+    }
+  }
+}

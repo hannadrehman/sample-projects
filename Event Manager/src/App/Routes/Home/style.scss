@@ -1,0 +1,40 @@
+@import '../../scss/colors';
+@import '../../scss/mixins';
+
+.home-wrapper{
+  position: relative;
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+  .event-title{
+    @include font-size(20px);
+  }
+  .textbox-a{
+    width: 300px;
+    height: 15px;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid $color-thin-gray;
+    padding: 10px;
+    margin: 10px;
+
+  }
+  .save{
+    width: 300px;
+    height: 40px;
+    border: 1px solid $color-thin-gray;
+    outline: none;
+    border: 1px solid $color-thin-gray;
+    &:hover{
+      background-color: $color-dark-gray;
+      cursor: pointer;
+    }
+  }
+  .error{
+    color:$color-primary-red
+  }
+  .success{
+    color:$color-primary-blue
+  }
+}

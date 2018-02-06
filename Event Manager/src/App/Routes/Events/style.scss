@@ -1,0 +1,33 @@
+@import '../../scss/colors';
+@import '../../scss/mixins';
+
+.events-wrapper{
+  position: relative;
+  width: 60%;
+  margin: auto;
+  margin-top: 30px;
+  .header{
+    text-align: center;
+  }
+  .results-container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .filters{
+    min-width: 200px;
+    padding: 10px;
+    border: 1px solid $color-thin-gray;
+    margin-right: 10px;
+    .filter-item{
+      border-bottom: 1px solid $color-cdg-gray-b;
+      padding: 3px;
+      &.hide{
+        display: none
+      }
+    }
+  }
+  .filter-label{
+    margin-bottom: 6px;
+  }
+}
