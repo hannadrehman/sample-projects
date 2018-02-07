@@ -3,7 +3,7 @@
 ### For my complete react-redux starter project with test visit [here](https://github.com/hannadrehman/react-redux-starter)
 
 
-## Read [INSTALL.md](/INSTALL.md) for installation and basic setup guide
+## Read [INSTALL.md](/INSTALL.md) for installation and basic setup guide and how to run
 
 
 # Project structure 
@@ -73,25 +73,14 @@ the src folder has following structure
 +-- services --  will contain classes with tests. this app will be used as a helping application to the main app
 ```
 
-### structure for Redux store is :
+### structure for Redux store :
 
     ```
       +--App -- root component
       |   +-- common
       |   |   +-- Component
-      |   |   |   +--reducer.js
-      |   |   +-- reducer.js -- combined reducer of common and all child components in this directory
-      |   |   +-- action.js -- action creators Names of all common components
-      |   |
       |   +-- Routes
       |   |   +-- Component
-      |   |   |   +--reducer.js      
-      |   |   +-- reducer.js -- combined reducer of Route component and all its child components.
-      |   +-- reducer.js -- combined reducer of root + common and Routes
-      |   +-- store
-      |   |   +-- configureStore.js -- will create store with all reducers
-      |   |   +-- combinedReducers.js will export alredy combined reducers from App reducer.js
-      |   |   +-- logger.js middle ware to log on console on each dispatch  
 
     ```
       our top level reducer will be in App folder. which will combine all the reducers in 
@@ -99,11 +88,3 @@ the src folder has following structure
       finally it will be exported and used in the store.
       the store folder has cominedReducerfile which will import this component and pass it to the 
       redux store.
-
-8. Component Types in ReactJS
-    there are 3 component types in reactJS as of now. you should read about these 3 components before
-    diving into the code.
-    1. Statefull Components 
-    2. Pure Components
-    3. Functional Components
-    

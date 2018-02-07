@@ -26,8 +26,8 @@ class NavBar extends React.PureComponent {
     this.state = {
       // currentMode: 'desktop',
       links: [
-        { id: 0, name: 'home', link: '/' },
-        { id: 1, name: 'Events', link: '/events' },
+        { id: 0, name: 'Add Event', link: '/' },
+        { id: 1, name: 'View Events', link: '/events' },
       ],
     };
     this.renderLinks = this.renderLinks.bind(this);
