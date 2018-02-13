@@ -51,6 +51,7 @@ function setFrameDefaults(){
 /**
  * function addClickListener
  * description: adds the event handler on the overlay
+ * @param {string} id the id of the overlay container
  */
 function addClickListener(id){
    var overlay =  document.getElementById(id);
@@ -62,20 +63,21 @@ function addClickListener(id){
  * function overlayClickHandler
  * description: event handler for the click
  * action on the overlay
+ * @param {object} ev event object of the handler
  */
 function overlayClickHandler(ev){
     var overlay =  ev.target;
-    var mousePos = mouse(ev);
+    var mousePos = mouse(ev); //get mouse positions
 
-    var left = mousePos.left-(config.ballSize/2);
-    var top = mousePos.top-(config.ballSize/2);
+    var left = mousePos.left-(config.ballSize/2); //calculate left of the click
+    var top = mousePos.top-(config.ballSize/2); // calculate the top of the click
 
-    var ball = createBallElem(top, left);
-    overlay.appendChild(ball);
-    var basketPos = getFinalPos(ball,top, left);
-    basketBallPut(ball,basketPos.left, basketPos.top);
+    var ball = createBallElem(top, left); // create a ball at that pos
+    overlay.appendChild(ball); // apend to dom
+    var basketPos = getFinalPos(ball,top, left); // get the final position where ball is to be sent
+    basketBallPut(ball,basketPos.left, basketPos.top); // send ball to the basket
     
-    removeBall(ball);
+    removeBall(ball); // remove ball
     
 }
 /**
@@ -83,15 +85,20 @@ function overlayClickHandler(ev){
  * description: gets exact click positions on the overlay
  * we take the page coordinates, and subtract them with the
  * overlay position
+ * @param {object} ev event object of the mouse click
  */
 function mouse(ev){
     try{
-        var xCord = ev.pageX ;
+        // get click coordinates
+        var xCord = ev.pageX ;  
         var yCord = ev.pageY ;
+        // overlay
         var overlay = ev.target;
+        // get overlay coordinates
         var overlayX = overlay.getBoundingClientRect().left;
         var overlayY = overlay.getBoundingClientRect().top;
         
+        // return the relative pos of mouse click coordinates 
         return{
            top: yCord - overlayY,
            left: xCord - overlayX
@@ -105,6 +112,8 @@ function mouse(ev){
 /**
  * function createBallElem
  * description: creates basket ball element
+ * @param {number} top distance from top
+ * @param {number} left distance from left
  */
 function createBallElem(top,left){
     try{
@@ -121,8 +130,15 @@ function createBallElem(top,left){
     }
     
 }
+/**
+ * function getFinalPos
+ * description: returns the final position of the basket
+ * or to where the ball is send
+ * @param {Htmlobject} ball html ball object
+ * @param {number} top distance from top
+ * @param {number} left distance from left
+ */
 function getFinalPos(ball, top, left){
-    console.log(config.frameHeight,config.frameWidth )
     var targetTop = config.frameHeight -50;
     var targetLeft = config.frameWidth -40;
     return {
@@ -133,6 +149,8 @@ function getFinalPos(ball, top, left){
 /**
  * function removeBall
  * description: removes ball elem
+ * @param {Htmlobject} ball html ball object
+ * 
  */
 function removeBall(ball){
     var tt = setTimeout(function(){
@@ -142,6 +160,9 @@ function removeBall(ball){
 /**
  * function addTransform
  * description: add translate x,y to the balll
+ * @param {Htmlobject} ball html ball object
+ * @param {number} x distance from left
+ * @param {number} y distance from top
  */
 function addTransform(ball,x,y){
     ball.style.webkitTransform = 'translate('+x+'px,'+y+'px)';
@@ -155,6 +176,9 @@ function addTransform(ball,x,y){
 /**
  * function basketBallPut
  * description: puts the ball in the basket
+ * @param {Htmlobject} ball html ball object
+ * @param {number} x distance from left
+ * @param {number} y distance from top
  */
 function basketBallPut(ball,x,y){
    
