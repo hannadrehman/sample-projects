@@ -1,1 +1,1 @@
-### open index.html project in any browser 
+### open index.html in browser 
