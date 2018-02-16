@@ -6,6 +6,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const SystemBellPlugin = require('system-bell-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 
@@ -140,7 +141,7 @@ if (isProd) {
       },
     }),
     new HtmlWebpackPlugin({
-      title: 'Event Management',
+      title: 'Project Manager',
       filename: 'index.html',
       template: './src/index.ejs',
       favicon: './src/favicon.ico',
@@ -186,7 +187,7 @@ if (isProd) {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),
     new HtmlWebpackPlugin({
-      title: 'KM Q&A',
+      title: 'Project Manager',
       filename: 'index.html',
       template: './src/index.ejs',
       inject: true,

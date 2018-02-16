@@ -1,10 +1,16 @@
-# Event Manager
+# Project Management
 
 ### For my complete react-redux starter project with test visit [here](https://github.com/hannadrehman/react-redux-starter)
 
 
-## Read [INSTALL.md](/INSTALL.md) for installation and basic setup guide and how to run this project
+## Read [INSTALL.md](/INSTALL.md) for installation and basic setup guide and how to run
 
+### credential info. 
+| username      | password    | role      | description                                   |
+| ------------- |:-------------:| -----:  |------------:                                  |
+| owner         | any           | owner   | can create a project,list,task,edit list,task |
+| manager       | any           | manager | can create list,task,edit list,task           |
+| member        | any           | member  | Can only view                                 |
 
 # Project structure 
 all Files and Folders in the root directore are described below:
@@ -48,7 +54,8 @@ the src folder has following structure
 |    |    +-- CheckBox
 |    +-- Routes  --   page level comonents will be kept here
 |    |    +-- Home
-|    |    +-- Events
+|    |    +-- Project
+|    |    +-- Login
 |    |    +-- index.jsx
 |    |    +-- reducer.js -- all combined reducers for each commponent
 |    +-- scss  --   site top level styling will be kept here 
@@ -60,23 +67,21 @@ the src folder has following structure
 |    |    +-- combinedReducer.js -- will combine all components reducers
 |    |    +-- configureStore.js --  will create redux store
 |    |    +-- logger.js --  a console logger for all store actions and reducers
-|    +-- actions.js  --  all actions for App component 
 |    +-- reducer.js  --  reducer function for App component
-|    +-- utility.js  --  utility functions for App component .
 |    +-- index.jsx --  the entry point or the App component definition .
 |
 +-- assets --  this folder will have static assets for the application
 |    +-- css --  all css libs should placed here
 |    +-- images --  images should be kept here
 |
-+-- services --  will contain classes with tests. this app will be used as a helping application to the main app
++-- services --  will contain helper classes/functions to take common login out of the components
 ```
 
 ### structure for Redux store :
 
     ```
-      +--App -- root component
-      |   +-- common
+      +--Store -- root component
+      |   +-- App
       |   |   +-- Component
       |   +-- Routes
       |   |   +-- Component

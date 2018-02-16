@@ -1,0 +1,30 @@
+@import '../../scss/colors';
+@import '../../scss/mixins';
+
+.login-wrapper{
+  position: relative;
+  text-align: center;
+  margin: auto;
+  .login-box{
+    width: 400px;
+    display: inline-block;
+    text-align: left;
+    border: 1px solid $color-thin-gray;
+    border-radius: 3px;
+    padding: 10px;
+    padding-top: 20px;
+  }
+  .textbox{
+    border: none;
+    padding: 10px;
+    border-bottom: 1px solid $color-thin-gray;
+    width: 95%;
+    outline: none;
+  }
+  .submit{
+    margin: 10px auto;
+    padding: 10px;
+    width: 100%;
+
+  }
+}

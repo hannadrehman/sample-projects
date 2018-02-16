@@ -1,0 +1,24 @@
+@import '../../scss/colors';
+@import '../../scss/mixins';
+
+.message-wrapper{
+  position: relative;
+  &.true{
+    display: block;
+  }
+  &.false{
+    display: none;
+  }
+  .message-box{
+    padding: 10px;
+    border-radius: 3px;
+    &.info{
+      border: 1px solid $color-primary-blue;
+      color:  $color-primary-blue;
+    }
+    &.danger{
+      border: 1px solid $color-primary-red;
+      color: $color-primary-red;
+    }
+  }
+}

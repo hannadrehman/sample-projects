@@ -1,0 +1,22 @@
+@import '../../scss/colors';
+@import '../../scss/mixins';
+
+.home-wrapper{
+  position: relative;
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+  .home-tiles{
+    width: 300px;
+    margin: auto;
+  }
+  .action{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    height: 30px;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+}

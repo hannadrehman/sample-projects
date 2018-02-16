@@ -1,0 +1,20 @@
+@import '../../../scss/colors';
+@import '../../../scss/mixins';
+
+.project-wrapper{
+  position: relative;
+  a{
+    text-decoration: none;
+    &:hover{
+      div{
+        background-color: $color-thin-gray;
+      }
+    }
+  }
+  .project{
+    border: 1px solid $color-thin-gray;
+    border-radius: 4px;
+    padding: 17px;
+    margin: 8px;
+  }
+}

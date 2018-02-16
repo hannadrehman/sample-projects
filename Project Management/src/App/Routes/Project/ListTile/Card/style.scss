@@ -1,0 +1,29 @@
+@import '../../../../scss/colors';
+@import '../../../../scss/mixins';
+
+.card-wrapper{
+  position: relative;
+  border: 1px solid $color-thin-gray;
+  border-radius: 3px;
+  padding: 2px;
+  margin: 5px;
+  text-align: left;
+  .action{
+    cursor: pointer;
+    color: blue;
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    background-color: white;
+    &.top-right{
+      top: 4px;
+      position: absolute;
+      right: 0;
+    }
+  }
+  .card-title{
+    *{
+      display: inline-block;
+    }
+  }
+}
