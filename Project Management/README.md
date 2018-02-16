@@ -27,7 +27,7 @@ all Files and Folders in the root directore are described below:
   3.  [.gitignore](/.gitignore) : config for git that contains ignore file info. ex we dont want nodemodules to be stored on git
   4.  [.CHANGELOG.md](/.CHANGELOG.md) : all release notes and changes per version will be mentioned here.
   5.  [License.md](/License.md) : license info
-  6.  [webpack.config.js](/ webpack.config.js) : configuration file for webpack which will have transpile and bundle our project
+  6.  [webpack.config.js](/webpack.config.js) : configuration file for webpack which will have transpile and bundle our project
   7.  [yarn-error.log](/yarn-error.log)  : will contains error logs if occured in yarn execution
   8.  [README.md](/README.md)  : contains usefull info.
   9.  [package.json](/package.json)  : contains all dependency details and also Jest config
