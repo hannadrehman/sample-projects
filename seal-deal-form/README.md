@@ -1,8 +1,9 @@
 ## INSTALLATION
   install nodejs
 
-  
+
   in the project root directory 
+  
   ```npm install```
 
   this project is build with create-react-app .  incase you get problems installing and running
@@ -11,7 +12,6 @@
 
 ## Folder Structure
 
-After creation, your project should look like this:
 
 ```
 my-app/
@@ -45,10 +45,6 @@ In the project directory, you can run:
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](#running-tests) for more information.
 
 ### `npm run build`
 
@@ -57,5 +53,3 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
-
-See the section about [deployment](#deployment) for more information.
