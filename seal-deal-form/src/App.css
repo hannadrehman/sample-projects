@@ -1,0 +1,102 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 129px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.app-form-container{
+  padding: 10px;  
+  position: relative;
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+  border: 1px solid lightgray;
+}
+.tabs{
+  padding: 10px;
+}
+.tabs .step{
+  padding: 10px;
+  margin: 1px 2px;
+}
+.step.active{
+  background-color: brown;
+  color: white;
+  border: none;
+}
+.step-from{
+  display: none;
+}
+.step-from.active{
+  display: block
+}
+.next{
+  width: 40%;
+  border: 1px solid #1A237E;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #3f51b5;
+  color: white;
+  margin: 4px;
+}
+.prev{
+  width: 40%;
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #3f51b5;
+  color: white;
+  margin: 4px;
+}
+.submit{
+  width: 40%;
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #1A237E;
+  border: 1px solid #1A237E;
+  color: white;
+  margin: 4px;
+}
+input{
+  padding: 2px;
+  height: 25px;
+  border-radius: 3px;
+  border: 1px solid gray;
+  outline: none;
+}
+.error{
+  border-color: red;
+}
+i{
+  color: red;
+}
+.success{
+  color: blue;
+  font-weight: bold;
+  text-align: center;
+}
+.rule-set{
+  text-align: left;
+}
